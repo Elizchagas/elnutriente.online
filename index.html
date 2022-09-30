@@ -116,6 +116,16 @@ document.getElementById("descounttime").innerHTML =  getNow.getDate() + "/" + ge
       </div>
     </header>
 
+        <!--INÍCIO DO SCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.get("https://ipinfo.io/json", function (response) { $("#address").html(response.city);
+}, "jsonp");
+</script>
+
+<!--FIM DO SCRIPT-->
+      
     <section class="comments py-4">
       <div class="container">
         <div class="row justify-content-center">
@@ -137,7 +147,7 @@ document.getElementById("descounttime").innerHTML =  getNow.getDate() + "/" + ge
                       </td>
                     </tr>
                     <tr>
-                      <td class="fb-comments-comment-text">Wow, realmente valió la pena verlo hasta el final, mis amigos están locos por mi resultado, lo he estado aplicando durante dos semanas este protocolo y hasta mi esposo volvio a buscarme... 😘</td>
+                      <td class="fb-comments-comment-text">Wow, realmente valió la pena verlo hasta el final, mis amigos aqui en <span id="address" style="color:#000000;">Lima</span> están locos por mi resultado, lo he estado aplicando durante dos semanas este protocolo y hasta mi esposo volvio a buscarme... 😘</td>
                     </tr>
                     <tr>
                       <td class="fb-comments-comment-actions">
